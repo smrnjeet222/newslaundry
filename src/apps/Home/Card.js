@@ -3,18 +3,16 @@ import React, { useState, useEffect } from "react";
 export default function Card({ story }) {
   const [like, setLike] = useState(false);
 
-  useEffect(() => {
-    let localLike = "true" === localStorage.getItem(`${story.id}`);
-    setLike(localLike);
-  }, [like]);
+  const ID = `${story.id}`;
 
-  const storeLike = () => {
-    localStorage.setItem(`${story.id}`, !like);
-  };
+  useEffect(() => {
+    let localLike = "true" === localStorage.getItem(ID);
+    setLike(localLike);
+  }, [ID]);
 
   const toogleLike = () => {
     setLike((prev) => !prev);
-    storeLike();
+    localStorage.setItem(ID, !like);
   };
 
   return (

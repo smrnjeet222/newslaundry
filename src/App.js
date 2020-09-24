@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Grid from "./Grid";
+import Grid from "./apps/Home/Grid";
+import Nav from "./apps/Nav";
 
 const App = () => {
   const [stories, setStories] = useState([]);
@@ -44,18 +45,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <form onSubmit={getSearch} className="search-form">
-        <input
-          type="text"
-          className="search-bar"
-          value={search}
-          onChange={updateSearch}
-          placeholder="Search here ...."
-        />
-        <button className="search-btn" type="submit">
-          Search
-        </button>
-      </form>
+      <Nav search={search} updateSearch={updateSearch} getSearch={getSearch} />
       <Grid stories={filterStories} />
     </div>
   );
