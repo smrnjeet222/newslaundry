@@ -1,9 +1,13 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
 export default function Nav({ search, updateSearch, getSearch }) {
   return (
     <nav>
-      <form onSubmit={getSearch} className="search-form">
+      <a href="https://www.newslaundry.com/">
+        <img src={logo} alt="logo" className="logo" />
+      </a>
+      <form onSubmit={getSearch} className="search">
         <input
           type="text"
           className="search-bar"
