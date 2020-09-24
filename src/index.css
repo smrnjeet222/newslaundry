@@ -1,6 +1,8 @@
 *,
 *:before,
 *:after {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -9,8 +11,39 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #333;
+  background: #e53935ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e35d5bee,
+    #e53935cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e35d5bee,
+    #e53935cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f99290;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #914948;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c60905;
 }
 
 button {
@@ -38,7 +71,7 @@ nav {
   align-items: center;
   flex-grow: 1;
   overflow: hidden;
-  background-color: transparent;
+  backdrop-filter: blur(5px);
   margin: auto;
 }
 
@@ -65,7 +98,7 @@ nav {
 }
 
 .search-btn {
-  background: #a2a2a2;
+  background: red;
   color: #fff;
 }
 
@@ -154,6 +187,7 @@ img {
   color: #777;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .card-meta a {
   border: 2px solid red;
@@ -165,14 +199,6 @@ img {
   background: red;
 }
 
-.expand {
-  width: 50px;
-  z-index: 50;
-  color: #222;
-  font-size: 1.5rem;
-  padding: 0 1rem;
-}
-
 .card-expand {
   height: 1px;
   visibility: hidden;
@@ -181,7 +207,8 @@ img {
   transition: all 0.3s ease;
 }
 .like {
-  width: 50px;
+  width: 30px;
+  height: 30px;
   font-size: 1rem;
 }
 
@@ -192,11 +219,11 @@ img {
   }
   .logo {
     width: 300px;
-    margin-left: 5rem;
+    margin-left: 6rem;
     padding: 0.5rem 1rem;
   }
   .search {
-    margin-right: 5rem;
+    margin-right: 6rem;
     padding: 0.5rem 3rem;
   }
   .search input,
@@ -206,7 +233,7 @@ img {
   }
 
   .stories {
-    margin: 2rem 5rem;
+    margin: 2rem 6rem;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
   .card-headline {

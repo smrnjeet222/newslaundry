@@ -19,7 +19,7 @@ export default function Card({ story }) {
     <div class="card">
       <div class="card-img">
         <img
-          src="https://gumlet.assettype.com/newslaundry%2F2020-09%2Fd73649c8-ca54-4581-bd0c-d99fbcae470c%2FVaranasi_Covid_Economy_AI.jpg"
+          src={`https://gumlet.assettype.com/${story.story["hero-image-s3-key"]}`}
           alt="img"
         />
       </div>
@@ -32,6 +32,7 @@ export default function Card({ story }) {
           <button className="like" onClick={toogleLike}>
             {like ? "💗" : "❤"}
           </button>
+          <div className="author">{story.story["author-name"]}</div>
           <a href={story.story.url} className="read">
             Read More →
           </a>
