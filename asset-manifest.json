@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/newslaundry/static/css/main.c60343c4.chunk.css",
-    "main.js": "/newslaundry/static/js/main.ceb4265c.chunk.js",
-    "main.js.map": "/newslaundry/static/js/main.ceb4265c.chunk.js.map",
+    "main.js": "/newslaundry/static/js/main.387476fc.chunk.js",
+    "main.js.map": "/newslaundry/static/js/main.387476fc.chunk.js.map",
     "runtime-main.js": "/newslaundry/static/js/runtime-main.6e465499.js",
     "runtime-main.js.map": "/newslaundry/static/js/runtime-main.6e465499.js.map",
     "static/js/2.720b3e86.chunk.js": "/newslaundry/static/js/2.720b3e86.chunk.js",
     "static/js/2.720b3e86.chunk.js.map": "/newslaundry/static/js/2.720b3e86.chunk.js.map",
     "index.html": "/newslaundry/index.html",
-    "precache-manifest.8655851105ee6ee9f021ef08a0d18e1e.js": "/newslaundry/precache-manifest.8655851105ee6ee9f021ef08a0d18e1e.js",
+    "precache-manifest.adc93e7a57437e97066c6167582b917a.js": "/newslaundry/precache-manifest.adc93e7a57437e97066c6167582b917a.js",
     "service-worker.js": "/newslaundry/service-worker.js",
     "static/css/main.c60343c4.chunk.css.map": "/newslaundry/static/css/main.c60343c4.chunk.css.map",
     "static/js/2.720b3e86.chunk.js.LICENSE.txt": "/newslaundry/static/js/2.720b3e86.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6e465499.js",
     "static/js/2.720b3e86.chunk.js",
     "static/css/main.c60343c4.chunk.css",
-    "static/js/main.ceb4265c.chunk.js"
+    "static/js/main.387476fc.chunk.js"
   ]
 }
